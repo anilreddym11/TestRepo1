@@ -1,0 +1,7 @@
+<apex:page tabStyle="Contact" >
+<script type="text/javascript">
+        window.onload = function() {
+     parent.document.location.href = "/003?fcf=00B900000031bax";
+}
+</script>
+</apex:page>

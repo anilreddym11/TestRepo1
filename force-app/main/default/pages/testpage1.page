@@ -1,0 +1,6 @@
+<apex:page standardController="Account" extensions="Testpage1_Controller">
+<apex:form >
+<apex:commandButton value="Test" action="{!createABC}"/>
+</apex:form>
+
+</apex:page>

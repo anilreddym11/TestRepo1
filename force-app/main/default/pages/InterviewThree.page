@@ -1,0 +1,21 @@
+<apex:page standardController="Account" extensions="InterviewThree_controller" sidebar="false">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Show Accounts"  action="{!showselectedAccounts1}" immediate="false"/>
+            <apex:commandButton value="Save Dummy" action="{!SaveDummy}" immediate="true" /> 
+        </apex:pageBlockButtons>
+        <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!VFdata}" var="a" >
+                <apex:column headerValue="Select" >
+                    <apex:selectCheckboxes value="{!a.selected}"/>
+                </apex:column>
+                <apex:column headerValue="Account Name" value="{!a.accountId.name}"/>
+                <apex:column headerValue="Phone" value="{!a.accountId.Phone}"/>
+            </apex:pageBlockTable>
+            
+            
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

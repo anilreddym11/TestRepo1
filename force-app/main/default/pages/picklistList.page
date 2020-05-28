@@ -1,0 +1,25 @@
+<apex:page controller="PicklistController">
+<apex:sectionHeader title="Picklist Values" subtitle="Picklist"/>
+<apex:form >
+    <apex:pageBlock title="Custom Picklist">
+        <apex:pageBlockSection title="Picklist">
+           
+
+            <apex:selectList label="Year" value="{!pickval}" size="1">
+            
+                <apex:selectOptions value="{!Items}">
+                </apex:selectOptions>
+            
+            </apex:selectList>            
+        
+       
+        
+        
+        </apex:pageBlockSection>
+    
+    
+    </apex:pageBlock>
+
+
+</apex:form>
+</apex:page>

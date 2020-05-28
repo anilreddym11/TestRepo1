@@ -1,0 +1,58 @@
+<apex:page standardController="Account" extensions="SelectPicklist" showHeader="true" sidebar="true">
+<apex:form >
+    <apex:pageBlock title="Page Details">
+        <apex:pageBlockSection >
+            <apex:selectList label="Year of Passing" size="1" value="{!YearValue}"  multiselect="false" >
+                <apex:actionSupport event="onchange" action="{!Picklist}"/>
+                     <apex:actionStatus startText="Applying value........">
+                     </apex:actionStatus>
+             <apex:selectOptions value="{!Yearlist}"/>  
+            </apex:selectList>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+    <apex:pageBlock >
+    <apex:pageBlockSection rendered="{!YearValue1}">
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Name">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Name}" />
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Industry">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Industry}"/>
+       </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+
+    <apex:pageBlockSection rendered="{!YearValue2}">
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Phone">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Phone}"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Type">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Type}"/>
+       </apex:pageBlockSectionItem>
+               <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Description">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Description}"/>
+        </apex:pageBlockSectionItem>
+        <apex:pageBlockSectionItem >
+            <apex:outputLabel value="Account Rating">
+            </apex:outputLabel>
+            <apex:inputField value="{!Account.Rating}"/>
+       </apex:pageBlockSectionItem>
+    </apex:pageBlockSection>
+ 
+    <apex:pageBlockSection title="To Be Done" rendered="{!YearValue3}">
+    
+        To be Done... Please Contact System admin
+    
+    </apex:pageBlockSection>
+    </apex:pageBlock>
+  
+</apex:form>
+</apex:page>

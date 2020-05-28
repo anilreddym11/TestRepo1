@@ -1,0 +1,15 @@
+<apex:page controller="MyCustomController">
+  <apex:form > 
+  <apex:pageBlock title="Account detail">
+  <apex:pageblockSection title="Account Information" >
+  <apex:pageBlockSectionItem > 
+      <apex:inputField value="{!acc.name}"/>
+      </apex:pageBlockSectionItem>
+      <apex:inputField value="{!acc.phone}"/>
+      </apex:pageblockSection>
+      <apex:pageBlockButtons >
+          <apex:commandButton action="{!Test}" value="Save the Page"/>
+      </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

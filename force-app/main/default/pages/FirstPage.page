@@ -1,0 +1,7 @@
+<apex:page sidebar="true" standardController="Account">
+<apex:pageBlock title="A Block Title">
+<apex:pageBlockSection title="A Section Title">
+I'm three components deep!
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:page>

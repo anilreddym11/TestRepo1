@@ -1,0 +1,12 @@
+<apex:page controller="displaytwoObjectsData_Controller">
+  <apex:form >
+      <apex:pageBlock >
+           <apex:pageBlockTable var="wrap" value="{!myWrappers}">
+               <apex:column headerValue="Account Name" value="{!wrap.accRec.Name}"/>
+               <apex:column headerValue="Contact Name" value="{!wrap.conRec.Name}"/>
+           
+           </apex:pageBlockTable>   
+      
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

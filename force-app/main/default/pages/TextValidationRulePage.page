@@ -1,0 +1,13 @@
+<apex:page controller="ValidationClass">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockButtons >
+<apex:commandButton value="Test" action="{!init}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection >
+<apex:inputText label="Phone"/>
+<apex:inputField label="Account Name" value="{!Acc.Name}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

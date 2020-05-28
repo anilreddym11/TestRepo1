@@ -1,0 +1,14 @@
+<apex:page controller="CustomSettingsListController">
+    <apex:sectionHeader title="Custom Settings" subtitle="Countries"/>
+ 
+    <apex:form >
+        <apex:pageBlock >
+          <apex:pageBlockSection >
+
+            <apex:selectList label="Country Value" size="1">
+                <apex:selectOptions value="{!Items}"/>
+            </apex:selectList>
+          </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

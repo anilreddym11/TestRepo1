@@ -1,0 +1,18 @@
+<apex:page controller="dataTableCon">
+
+        <apex:dataTable value="{!accounts}" var="account">
+
+                <apex:column >
+                       <apex:facet name="header">Name</apex:facet>
+                       <apex:outputText value="{!account.name}"/>
+                </apex:column>
+
+                <apex:column >
+
+                        <apex:facet name="header">Owner</apex:facet>
+                        <apex:outputText value="{!account.owner.name}"/>
+                </apex:column>
+
+        </apex:dataTable>
+
+</apex:page>

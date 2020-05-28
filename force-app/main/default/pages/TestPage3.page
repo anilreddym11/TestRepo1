@@ -1,0 +1,12 @@
+<apex:page standardController="Account" >
+<apex:form >
+
+<apex:commandButton action="{!save}" value="Save the Page" id="theButton"/>
+<apex:pageBlock title="Accout Details">
+<apex:pageBlockSection title="Account Information" collapsible="true" >
+<apex:inputField value="{!account.name}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+</apex:page>

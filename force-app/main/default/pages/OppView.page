@@ -1,0 +1,7 @@
+<apex:page standardController="Opportunity">
+  <apex:pageBlock title="My Opportunity Details">
+    <p>Hello {!opportunity.Name}</p>
+  </apex:pageBlock>                   
+  <apex:detail relatedList="false" />
+
+</apex:page>

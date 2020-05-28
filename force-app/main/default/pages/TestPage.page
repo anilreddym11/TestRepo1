@@ -1,0 +1,18 @@
+<apex:page controller="TestPage_COntroller1">
+    <apex:form >
+        <apex:pageBlock >
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Save" action="{!Test}"/>
+        </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!acc.Name}"/>
+            
+            </apex:pageBlockSection>
+            <apex:pageBlockSection >
+                <apex:inputField value="{!con.LastName}"/>
+            </apex:pageBlockSection>
+        
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>

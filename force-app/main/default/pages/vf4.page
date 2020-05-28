@@ -1,0 +1,10 @@
+<apex:page standardController="Contact" >
+<apex:form >
+<apex:pageBlock title="Contact Details">
+<apex:pageBlockSection title="Contact">
+<apex:inputField value="{!Contact.Account.Name}"/>
+<apex:inputField value="{!Contact.Account.Industry}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>
